@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+
+#header {
+	margin: 0 auto;
+	max-width: 1378px;
+	height: 74px;
+}
+#header .tab {
+	float: left;
+	margin-top: 10px;
+}
+#header .tab img {
+	vertical-align: middle;
+}
+#header .tab span {
+	vertical-align: middle;
+	font-size: 14px;
+	color: #1682ff;
+}
+#header .tab a {
+	display: block;
+}
+#header .logo {
+	position: absolute;
+	left: 50%;
+	top: 15px;
+	transform: translate(-50%, 0);
+}
+#header .aside {
+	float: right;
+	margin-top: 13px;
+}
+#header .aside li {
+	display: inline-block;
+	text-align: right;
+	margin-left: 25px;
+}
+#header .aside li p {
+	display: inline-block;
+	font-size: 13px;
+	color: #1682ff;
+	vertical-align: middle;
+}
+#header .aside li p span {
+	font-size: 18px;
+	font-weight: 700;
+}
+#header .aside li a {
+	margin-left: 8px;	
+}
+#header .aside li a img {
+	width: 40px;
+	vertical-align: middle;
+}
+</style>
+</head>
+
+<body>
+	<header id="header">
+		<div class="tab">
+			<a href="">
+				<img src="images/icon_tab.png" alt="icon_tab">
+				<span>MEMU</span>
+			</a>
+		</div>
+		<div class="logo">
+			<a href=""><img src="images/logo.png" alt="logo"></a>
+		</div>
+		<div class="aside">
+			<ul>
+				<li>
+					<p>렌탈 상담/주문<br><span>
+						1577-8399</span></p>	
+					<a href=""><img src="images/icon_rental_center.png" alt="icon_rental_center"></a>
+				</li>
+				<li>			
+					<p>공간케어<br><span>
+					1600-7697</span></p>
+					<a href=""><img src="images/icon_cs_center.png" alt="icon_cs_center"></a>	
+				</li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
