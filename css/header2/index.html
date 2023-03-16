@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, table, th, td {
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+img {
+	vertical-align: top;
+}
+
+#header {
+	margin:0 auto;
+	min-width: 1364px;
+	height: 138px;
+}
+#header .top {
+	margin: 0 auto;
+	border-bottom: 1px solid #eaeaea;
+}
+#header .top .top_inner {
+	margin: 0 auto;
+	width: 1364px;
+	height: 56px;
+}
+#header .top .top_inner .top_right {
+	float: right;
+}
+#header .top .top_inner .top_right .utile {
+	float: left;
+}
+#header .top .top_inner .top_right .utile a {
+	display: inline-block;
+	padding-right: 40px;
+	line-height: 56px;
+	font-weight: 700;
+	border-right: 1px solid #eaeaea;
+	color: #aaa;
+}
+#header .top .top_inner .top_right .search {
+	float: left;	
+	
+}
+#header .top .top_inner .top_right .search a {
+	display: inline-block;
+	padding: 12px 0 12px 30px;
+}
+#header .menu {
+	margin: 0 auto;
+	width: 1364px;
+}
+#header .logo {
+	float: left;
+	margin-top : 10px;
+}
+#gnb {
+	float: right;
+} 
+#gnb li {
+	display: inline-block;
+}
+
+#gnb li a {
+	display: block;
+	padding: 0 15px;
+	line-height: 82px;
+	font-size: 13px;
+	color: #535353;
+}
+#gnb li:last-child a {
+	padding-right: 0;
+}
+</style>
+</head>
+
+<body>
+<header id="header">
+		<div class="top">
+			<div class="top_inner">
+				<div class="top_right">
+					<div class="utile"><a href="">Sign in</a></div>
+					<div class="search">
+						<a href=""><img src="images/btn_search.png" alt="btn_search"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="logo">
+				<a href=""><img src="images/logo.png"alt="logo"></a>
+			</div>
+			<nav id="gnb">
+				<ul>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">DOWNLOADS</a></li>
+					<li><a href="">DOCUMENTATION</a></li>
+					<li><a href="">COMMUNITY</a></li>
+					<li><a href="">FORUM</a></li>
+					<li><a href="">NEWS</a></li>
+					<li><a href="">BLOG</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</body>
+</html>
