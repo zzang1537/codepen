@@ -1,0 +1,138 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Roboto Condensed", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+
+/***/
+#header {
+	text-align: center;
+}
+#header .top {
+	position: relative;
+	margin: 0 auto;
+	width: 1040px;
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+}
+#header .sns {
+	position: relative;
+	float: left;
+	padding: 26px 40px 16px 40px;
+	font-size: 0;
+}
+#header .sns::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 25px;
+	width: 1px;
+	height: 32px;
+	background-color: #ccc;
+}
+#header .sns li {
+	display: inline-block;
+}
+#header .sns li a {
+	display: block;
+	padding: 10px;
+}
+#header .utils {
+	float: right;
+}
+#header .logo {
+	position: absolute;
+	margin-top: 25px;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);	
+}
+#header .utils {
+	position: relative;
+	padding: 30px 40px 20px 40px;
+}
+#header .utils::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 25px;
+	width: 1px;
+	height: 32px;
+	background-color: #ccc;
+}
+#header .utils li {
+	display: inline-block;
+}
+#header .utils li a {
+	display: block;
+	padding: 0 8px;
+	line-height: 30px;
+	font-size: 0.875em;
+	color: #505153;
+}
+#header .utils li a:hover {
+	text-decoration: underline;
+}
+#header .menu {
+	margin: 0 auto;
+	width: 1040px;
+}
+#header .menu > ul > li {
+	display: inline-block;
+	position: relative;
+}
+#header .menu > ul > li > a {
+	display: block;
+	padding: 0 20px;
+	line-height: 70px;
+	font-size: 0.875em;
+	font-weight: 400;
+	color: #505153;	
+}
+#header .menu li ul {
+	display: none;
+	position: absolute;	
+	width: 200%;
+	left: -50%;
+	top: 50px;
+}
+#header .menu > ul > li:hover ul {
+	display: block;
+}
+#header .menu li li a {
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	font-size: 0.875em;
+	font-weight: 200;
+	transition: all 300ms;
+}
+#header .menu li li {
+	border-bottom: 1px solid #eaeaea;
+}
+#header .menu li li a:hover {
+	font-weight: 400;
+	color: #fff;
+	background-color: #505153;
+}
